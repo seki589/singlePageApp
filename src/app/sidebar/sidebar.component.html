@@ -1,0 +1,16 @@
+<mat-drawer-container class="example-container" autosize style="height: 80vh">
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+      <div class="mat-toolbar-row navButton">
+          <button mat-button (click)="drawer.toggle()" routerLink="/">Home</button>
+          <button mat-button (click)="drawer.toggle()" routerLink="/users">Users</button>
+          <button mat-button (click)="drawer.toggle()" routerLink="/blogs">Blogs</button>
+          <button mat-button (click)="drawer.toggle()" routerLink="/settings">Settings</button>
+          <button mat-button (click)="drawer.toggle()" routerLink="/info">Info</button>
+      </div>
+    </mat-drawer>
+    <div class="example-sidenav-content">
+      <button type="button" mat-stroked-button (click)="drawer.toggle()">
+        Side menu
+      </button>
+    </div>
+  </mat-drawer-container>
